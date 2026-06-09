@@ -1,8 +1,7 @@
 # Python OOP — Revision Reference
 
 Clean, corrected, runnable reference notes for Object-Oriented Programming in
-Python. Built from my own study (Corey Schafer's OOP series as the starting
-point), then rewritten for correctness, type hints, and idiomatic modern Python.
+Python. Built from my own study, then rewritten for correctness, type hints, and idiomatic modern Python.
 
 This is a personal revision repo, not a tutorial course. Each file is a focused,
 self-contained reference for **one** concept. The workflow is: open a file, read
@@ -88,7 +87,3 @@ Foundational examples adapted from Corey Schafer's Python OOP series, then
 rewritten and extended (type hints, `NotImplemented` handling, descriptors,
 ABCs, protocols, dataclasses, slots, enums, callable objects, dynamic
 attributes, custom exceptions, cached properties). Standard library only.
-
-## License
-
-MIT — see `LICENSE`.
