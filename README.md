@@ -1,4 +1,4 @@
-# Python OOP — Revision Reference
+# Python Object Oriented Programming
 
 Clean, corrected, runnable reference notes for Object-Oriented Programming in
 Python. Built from my own study, then rewritten for correctness, type hints, and idiomatic modern Python.
