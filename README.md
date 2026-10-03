@@ -41,38 +41,38 @@ intermediate/advanced tier — do them after the core (01–24) is solid.
 
 | # | File | One-line takeaway |
 |---|------|-------------------|
-| 01 | [`01_classes_and_instances.py`](<01_classes_and_instances.py>) | A class is a blueprint; each instance holds its own data. |
-| 02 | [`02_instance_methods_and_self.py`](<02_instance_methods_and_self.py>) | Methods receive the instance as `self`; `obj.m()` == `Class.m(obj)`. |
-| 03 | [`03_class_variables.py`](<03_class_variables.py>) | Class vars are shared; `self.x = ...` shadows with an instance var. |
-| 04 | [`04_classmethods_and_staticmethods.py`](<04_classmethods_and_staticmethods.py>) | `cls` methods (incl. alternate constructors) vs no-arg utilities. |
-| 05 | [`05_single_inheritance_and_super.py`](<05_single_inheritance_and_super.py>) | Subclass reuses the parent; chain `__init__` via `super()`. |
-| 06 | [`06_method_overriding.py`](<06_method_overriding.py>) | Subclass redefines a method; extend it with `super()`. |
-| 07 | [`07_multiple_inheritance_and_mro.py`](<07_multiple_inheritance_and_mro.py>) | C3 MRO; `super()` = next in MRO; the diamond is handled. |
-| 08 | [`08_mixins.py`](<08_mixins.py>) | Small behaviour-only classes mixed in via multiple inheritance. |
-| 09 | [`09_isinstance_vs_issubclass.py`](<09_isinstance_vs_issubclass.py>) | Object-vs-class vs class-vs-class; the classic always-False bug. |
-| 10 | [`10_repr_and_str.py`](<10_repr_and_str.py>) | `__repr__` for devs (eval-able), `__str__` for users; repr is the fallback. |
-| 11 | [`11_ arithmetic_and_comparison.py`](<11_ arithmetic_and_comparison.py>) | Operators incl. reflected (`__rmul__`); `total_ordering`; `NotImplemented`. |
-| 12 | [`12_container_protocol.py`](<12_container_protocol.py>) | `__len__/__getitem__/__setitem__/__contains__` → behaves like a container. |
-| 13 | [`13_iterator_protocol.py`](<13_iterator_protocol.py>) | `__iter__/__next__` + the generator (`yield`) form of `__iter__`. |
-| 14 | [`14_context_manager_protocol.py`](<14_context_manager_protocol.py>) | `__enter__/__exit__` guarantee teardown via `with`. |
-| 15 | [`15_hash_and_eq.py`](<15_hash_and_eq.py>) | Custom `__eq__` needs a matching `__hash__` over the same fields. |
-| 16 | [`16_encapsulation_and_name_mangling.py`](<16_encapsulation_and_name_mangling.py>) | `_x` is convention, `__x` is mangled; no true privacy. |
-| 17 | [`17_property_decorators.py`](<17_property_decorators.py>) | Expose computed/validated attributes without changing call sites. |
-| 18 | [`18_descriptors.py`](<18_descriptors.py>) | Reusable `__get__/__set__` logic; the machinery behind `property`. |
-| 19 | [`19_abstract_base_classes.py`](<19_abstract_base_classes.py>) | Enforce an interface; an abstract class can't be instantiated. |
-| 20 | [`20_protocols_and_duck_typing.py`](<20_protocols_and_duck_typing.py>) | Structural typing — conform by shape, not by inheritance. |
-| 21 | [`21_composition_vs_inheritance.py`](<21_composition_vs_inheritance.py>) | IS-A (inherit) vs HAS-A (compose & delegate). |
-| 22 | [`22_dataclasses.py`](<22_dataclasses.py>) | Auto `__init__/__repr__/__eq__`; `default_factory`; `frozen`/`order`. |
-| 23 | [`23_slots.py`](<23_slots.py>) | A fixed attribute layout saves memory and removes `__dict__`. |
-| 24 | [`24_enums.py`](<24_enums.py>) | Named constant singletons instead of magic strings/ints. |
-| 25 | [`25_callable_objects.py`](<25_callable_objects.py>) | `__call__` makes instances callable; basis for class-based decorators. |
-| 26 | [`25_dynamic_attribute_access.py`](<25_dynamic_attribute_access.py>) | `__getattr__`/`__setattr__` intercept attribute reads/writes. |
-| 27 | [`27_custom_exceptions.py`](<27_custom_exceptions.py>) | One base error + subclasses; carry context; chain with `raise ... from`. |
-| 28 | [`28_cached_property.py`](<28_cached_property.py>) | Compute an expensive derived value once, then cache it on the instance. |
-| 29 | [`29_dataclasses_advanced.py`](<29_dataclasses_advanced.py>) | `__post_init__`, `field` options, `kw_only`, `slots`. |
-| 30 | [`30_new_vs_init.py`](<30_new_vs_init.py>) | `__new__` creates the instance, `__init__` initialises it. |
-| 31 | [`31_init_subclass.py`](<31_init_subclass.py>) | `__init_subclass__` auto-registers/validates subclasses (no metaclass). |
-| 32 | [`32_copy_vs_deepcopy.py`](<32_copy_vs_deepcopy.py>) | Shallow copy shares nested objects; deep copy duplicates them. |
+| 01 | [`01_classes_and_instances.py`](01_classes_and_instances.py) | A class is a blueprint; each instance holds its own data. |
+| 02 | [`02_instance_methods_and_self.py`](02_instance_methods_and_self.py) | Methods receive the instance as `self`; `obj.m()` == `Class.m(obj)`. |
+| 03 | [`03_class_variables.py`](03_class_variables.py) | Class vars are shared; `self.x = ...` shadows with an instance var. |
+| 04 | [`04_classmethods_and_staticmethods.py`](04_classmethods_and_staticmethods.py) | `cls` methods (incl. alternate constructors) vs no-arg utilities. |
+| 05 | [`05_single_inheritance_and_super.py`](05_single_inheritance_and_super.py) | Subclass reuses the parent; chain `__init__` via `super()`. |
+| 06 | [`06_method_overriding.py`](06_method_overriding.py) | Subclass redefines a method; extend it with `super()`. |
+| 07 | [`07_multiple_inheritance_and_mro.py`](07_multiple_inheritance_and_mro.py) | C3 MRO; `super()` = next in MRO; the diamond is handled. |
+| 08 | [`08_mixins.py`](08_mixins.py) | Small behaviour-only classes mixed in via multiple inheritance. |
+| 09 | [`09_isinstance_vs_issubclass.py`](09_isinstance_vs_issubclass.py) | Object-vs-class vs class-vs-class; the classic always-False bug. |
+| 10 | [`10_repr_and_str.py`](10_repr_and_str.py) | `__repr__` for devs (eval-able), `__str__` for users; repr is the fallback. |
+| 11 | [`11_arithmetic_and_comparison.py`](11_arithmetic_and_comparison.py) | Operators incl. reflected (`__rmul__`); `total_ordering`; `NotImplemented`. |
+| 12 | [`12_container_protocol.py`](12_container_protocol.py) | `__len__/__getitem__/__setitem__/__contains__` → behaves like a container. |
+| 13 | [`13_iterator_protocol.py`](13_iterator_protocol.py) | `__iter__/__next__` + the generator (`yield`) form of `__iter__`. |
+| 14 | [`14_context_manager_protocol.py`](14_context_manager_protocol.py) | `__enter__/__exit__` guarantee teardown via `with`. |
+| 15 | [`15_hash_and_eq.py`](15_hash_and_eq.py) | Custom `__eq__` needs a matching `__hash__` over the same fields. |
+| 16 | [`16_encapsulation_and_name_mangling.py`](16_encapsulation_and_name_mangling.py) | `_x` is convention, `__x` is mangled; no true privacy. |
+| 17 | [`17_property_decorators.py`](17_property_decorators.py) | Expose computed/validated attributes without changing call sites. |
+| 18 | [`18_descriptors.py`](18_descriptors.py) | Reusable `__get__/__set__` logic; the machinery behind `property`. |
+| 19 | [`19_abstract_base_classes.py`](19_abstract_base_classes.py) | Enforce an interface; an abstract class can't be instantiated. |
+| 20 | [`20_protocols_and_duck_typing.py`](20_protocols_and_duck_typing.py) | Structural typing — conform by shape, not by inheritance. |
+| 21 | [`21_composition_vs_inheritance.py`](21_composition_vs_inheritance.py) | IS-A (inherit) vs HAS-A (compose & delegate). |
+| 22 | [`22_dataclasses.py`](22_dataclasses.py) | Auto `__init__/__repr__/__eq__`; `default_factory`; `frozen`/`order`. |
+| 23 | [`23_slots.py`](23_slots.py) | A fixed attribute layout saves memory and removes `__dict__`. |
+| 24 | [`24_enums.py`](24_enums.py) | Named constant singletons instead of magic strings/ints. |
+| 25 | [`25_callable_objects.py`](25_callable_objects.py) | `__call__` makes instances callable; basis for class-based decorators. |
+| 26 | [`26_dynamic_attribute_access.py`](26_dynamic_attribute_access.py) | `__getattr__`/`__setattr__` intercept attribute reads/writes. |
+| 27 | [`27_custom_exceptions.py`](27_custom_exceptions.py) | One base error + subclasses; carry context; chain with `raise ... from`. |
+| 28 | [`28_cached_property.py`](28_cached_property.py) | Compute an expensive derived value once, then cache it on the instance. |
+| 29 | [`29_dataclasses_advanced.py`](29_dataclasses_advanced.py) | `__post_init__`, `field` options, `kw_only`, `slots`. |
+| 30 | [`30_new_vs_init.py`](30_new_vs_init.py) | `__new__` creates the instance, `__init__` initialises it. |
+| 31 | [`31_init_subclass.py`](31_init_subclass.py) | `__init_subclass__` auto-registers/validates subclasses (no metaclass). |
+| 32 | [`32_copy_vs_deepcopy.py`](32_copy_vs_deepcopy.py) | Shallow copy shares nested objects; deep copy duplicates them. |
 
 ## Common gotchas (the traps worth memorising)
 
